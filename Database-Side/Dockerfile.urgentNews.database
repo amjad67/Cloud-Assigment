@@ -1,5 +1,4 @@
-FROM mariadb:10.6
-
+FROM mysql
 COPY news.sql /docker-entrypoint-initdb.d/news.sql
 
 EXPOSE 3306
